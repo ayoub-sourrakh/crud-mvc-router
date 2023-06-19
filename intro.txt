@@ -1,0 +1,58 @@
+Créer l'arboréscence suivante :
+-------------------------------
+    - App/
+        - Controller/
+            - AbonneController.php
+            - EmpruntController.php
+            - LivreController.php
+        - Model/
+            - AbonneRepository.php
+            - EmpruntRepository.php
+            - LivreRepository.php
+        - View/
+            - abonne/
+                - affichage.php
+                - creation.php
+                - details.php
+                - modification.php
+            - emprunt/
+                - affichage.php
+                - creation.php
+                - details.php
+                - modification.php
+            - livre/
+                - affichage.php
+                - creation.php
+                - details.php
+                - modification.php
+            - layout.php
+    - Core/
+        - Autoload.php
+        - config.xml
+        - Controller.php
+        - EntityRepository.php
+        - Router.php
+    - public/
+        - css/
+            - style.css
+        - js/
+            - script.js
+        - images/
+    - SQL/
+        - bibliotheque.sql
+    - index.php 
+
+
+
+// EXERCICE : Faire la partie abonne : Create | Read | Update | Delete
+
+- Faire un Controller pour que les autres le reçoivent en héritage
+    - faire une method render
+    - créer toutes les methodes qui pourrait servir sur les controller enfant
+
+- Faire une EntityRepository pour que les autres la reçoivent en héritage
+    - faire toutes methodes qui seraient commune à nos Model
+
+- Pour la création d'un emprunt : il faut proposer des listes déroulantes proposant la liste des abonnes pour l'id_abonne de cette table et la liste des livres disponibles pour id_livre de cette table
+
+- Modifier la table livre afin de recevoir une image du livre
